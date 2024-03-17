@@ -68,7 +68,7 @@ body{
     font-family: 'Roboto', sans-serif;
     width: 100%;
     font-family: "Roboto", sans-serif;
-    background: url(/img/Background.jpg) no-repeat;
+    background: url(img/Background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
