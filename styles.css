@@ -477,7 +477,7 @@ input[type="button"]:hover{
     }
     
     .social-icons{
-        height: 100px;
+        height: 50px;
         margin-top: 40px;
         text-align: center;
     }
@@ -491,17 +491,18 @@ input[type="button"]:hover{
     .aboutContent{
         width: 100%;
         height: fit-content;
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .aboutContent h2{
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
         font-family: "Roboto", sans-serif;
         color: white;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
     .paragraph{
         float: left;
@@ -640,11 +641,11 @@ input[type="button"]:hover{
         height: 100vh;
     }
     .contactContent h2{
-        font-size: 50px;
+        font-size: 30px;
         text-align: center;
         font-family: "Roboto", sans-serif;
         color: white;
-        margin-bottom: 30px;
+        margin: 30px 0;
     }
     .contactForm{
         border: 10px solid transparent;
@@ -653,19 +654,24 @@ input[type="button"]:hover{
     }
     .contactForm p{
         color: aliceblue;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
         margin-bottom: 50px;
         width: 100%;
+    }
+
+    .nameField, .emailField, .textareaField{
+        padding: 10px 10px 0 10px !important;
+        width: 313px !important;
     }
     .contactForm form{
         width: 90%;
         border: 10px solid transparent;
         border-radius: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
         margin: auto;
         background-color: rgb(0, 33, 104);
-        padding-bottom: 15px;
+        padding-bottom: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -685,20 +691,21 @@ input[type="button"]:hover{
     form label{
         color: aliceblue;
         font-size: 25px;
-    }
-    .nameField, .emailField, .textareaField{
-        padding: 20px;
+        padding: 10px;
     }
 
     .textareaField{
         width: 330px;
     }
 
+
     textarea{
         width: 100%;
         max-width: 100%;
         background-color: rgb(0, 12, 22);
         border-radius: 10px;
+        height: 50px;
+        margin: 10px 0 10px 0;
     }
     input[type="button"]{
         width: 200px;
@@ -714,14 +721,15 @@ input[type="button"]:hover{
 
     .footer{
         width: 100%;
-        height: 100px;
+        height: fit-content;
         background-color: rgb(0, 12, 22);
         border: 2px solid transparent;
-        padding: 0;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
     .footer p{
         color: aliceblue;
