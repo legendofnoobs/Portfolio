@@ -97,11 +97,11 @@ header a{
     border-radius: 50px;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-    transition: 0.3s ease-in;
+    transition: 0.2s ease-in;
 }
 header a:hover{
-    background-color: rgb(204, 0, 255);
-    color: rgb(8, 0, 78);
+    background-color: rgb(43, 110, 255);
+    color: rgb(255, 255, 255);
 }
 section{
     padding: 100px 150px;
@@ -292,7 +292,7 @@ section{
 }
 .usedLang p{
     float: left;
-    padding: 0 20px 0 10px;
+    padding: 0 20px 0 20px;
     margin: 10px ;
     background-color: rgb(43, 110, 255);
     border-radius: 25px;
@@ -354,8 +354,11 @@ form label{
 textarea{
     width: 100%;
     max-width: 100%;
+    max-height: 50px;
     background-color: rgb(0, 12, 22);
     border-radius: 10px;
+    color: white !important;
+    padding: 20px;
 }
 input[type="button"]{
     width: 200px;
@@ -395,6 +398,7 @@ input[type="button"]:hover{
         width: 100%;
         font-family: "Roboto", sans-serif;
         background-color: rgb(0, 12, 22);
+        background: url(img/BackgroundMobile.jpg);
         background-size:cover;
         background-position: center;
         background-attachment: fixed;
@@ -405,20 +409,42 @@ input[type="button"]:hover{
         
     }
     
-    header{
-        width: 50%;
+    .header{
+        width: 90%;
         margin: 20px auto 20px auto;
-        border: 0..1px solid rgb(255, 255, 255);
-        text-align: center;
-        padding: 14px;
-        font-size: 20px;
+        position: fixed;
+        display: contents;
+    }
+
+    nav{
+        width: 90%;
+        height: 30px;
+        margin: 20px;
+        border: 0.5px solid rgba(255, 255, 255, 0.199);
         border-radius: 50px;
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.425);
-        background-color: rgba(88, 88, 88, 0.507);
+        background-color: rgba(0, 27, 49, 0.308);
         backdrop-filter: blur(10px);
-        position: fixed; 
-        left: 12.5%;
-        
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0%;
+        transition: 0.2s ease;
+    }
+
+    header a{
+        text-decoration: none;
+        color: white;
+        padding: 1px 5px 1px 5px;
+        margin: 0px 5px 0px 5px;
+        border-radius: 50px;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        transition: 0.2s ease-in;
     }
 
     hr{
@@ -560,6 +586,12 @@ input[type="button"]:hover{
         padding: 50px;
         transition: 0.2s ease;
     }
+
+    .skill:hover{
+        background-color: transparent;
+        transform: scale(1.0);
+    }
+
     
     .skillcontainer i{
         font-size: 80px;
@@ -625,7 +657,7 @@ input[type="button"]:hover{
     }
     .usedLang p{
         float: left;
-        padding: 0 20px 0 10px;
+        padding: 0 20px 0 20px;
         margin: 10px ;
         background-color: rgb(43, 110, 255);
         border-radius: 25px;
@@ -706,7 +738,10 @@ input[type="button"]:hover{
         border-radius: 10px;
         height: 50px;
         margin: 10px 0 10px 0;
+        padding: 10px;
+        color: white !important;
     }
+
     input[type="button"]{
         width: 200px;
         padding: 12px 0px;
@@ -734,7 +769,7 @@ input[type="button"]:hover{
     .footer p{
         color: aliceblue;
         width: 100%;
-        font-size: 20px;
+        font-size: 14px;
         text-align: center;
         margin: 0;
         border: 2px solid transparent;
