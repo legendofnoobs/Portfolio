@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html{
+    height: 100vh;
+    overflow: hidden;
+}
+
+body{
+    background-color: rgb(15, 23, 42);
+    overflow: hidden;
+    height: 100%;
+}
+
+
+
+.container{
+    /* background-color: red; */
+    height: 100vh;
+    padding: 0px 50px;
+    width: 1088px;
+    margin: auto;
+    display: flex;
+}
+
+.constant-div{
+    /* background-color: green; */
+    width: 528px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.sliding-div{
+    /* background-color: blue; */
+    width: 528px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    overflow-y:scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    color: white;
+}
+
+.information-info{
+    /* background-color: tomato; */
+    margin-bottom: 40px;
+}
+
+.information-info h1{
+    font-size: 3em;
+    color: white;
+}
+
+.information-info h3{
+    font-size: 1.5em;
+    color: white;
+}
+
+.information-info h4{
+    color: white;
+}
+
+.information ul{
+    width: fit-content;
+    height: 120px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.information ul li:hover a{
+    color: rgb(15, 23, 42);
+    background-color: aqua;
+    border-radius: 40px;
+}
+
+
+.information ul li a{
+    font-size: 1.2em;
+    color: white;
+    transition: ease 0.3s;
+    padding: 0px 15px;
+    border-radius: 40px;
+}
+
+.links{
+    /* background-color: tomato; */
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    font-size: 2em;
+    list-style: none;
+}
+
+.links li a{
+    color: rgb(150, 150, 150);
+    transition: ease 0.2s;
+}
+
+.links li a:hover{
+    color: white;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px 39px;
+}
+
+.card{
+    width: fit-content;
+    height: fit-content;
+    /* background-color: rgb(80, 35, 27); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.photo{
+    width: fit-content;
+}
+
+/* ===============test================ */
+
+.effect-card{
+    /* width: 200px; 
+    height: 200px;  */
+    /* margin: auto;  */
+    border: 1px solid transparent; 
+    border-radius: 10px;
+    padding: 10px;
+    transition: ease 0.2s;
+}
+
+.effect-card:hover{
+    background-color: rgba(124, 124, 124, 0.24);
+    border: 1px solid aqua;
+}
+
+.effect{
+    width: 494px;
+    color: white;
+    font-size: 1.15em;
+    margin: auto;
+    padding: 10px;
+    transition: ease 0.2s;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.effect:hover{
+    background-color: rgba(124, 124, 124, 0.24);
+    border: 1px solid aqua;
+}
+
+.project-card{
+    width: 100%;
+    height: fit-content;
+    /* background-color: tomato; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    transition: ease 0.2s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.project-card:hover{
+    border: 1px solid aqua;
+    background-color: rgba(124, 124, 124, 0.24);
+}
+
+.project-card img{
+    border-radius: 10px;
+}
+
+.project-info-techs p{
+    margin-right: 10px;
+    background-color: aqua;
+    color: rgb(15, 23, 42);
+    padding: 2px 10px;
+    border-radius: 30px;
+}
+
+.project-info a{
+    font-size: 1.5em;
+    margin-right: 5px;
+    color: white;
+}
+
+#resumeButton{
+    background-color: aqua;
+    padding: 5px 15px;
+    font-size: 1.5em;
+    border: 1px solid aqua;
+    border-radius: 40px;
+    transition: ease 0.2s;
+    color: rgb(15, 23, 42);
+}
+
+#resumeButton:hover{
+    background-color: transparent;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* media query for tablets */
+
+@media (max-width:1110px){
+    .decoration{
+        display: none;
+    }
+    .container{
+        padding: 0 20px;
+        width: fit-content;
+    }
+    .constant-div{
+        width: 460px;
+    }
+    /* .sliding-div{
+        width: 450px;
+    } */
+    .sliding-div:nth-child(1){
+        width: 450px;
+    }
+}
+
+@media (max-width:821px){
+    .container{
+        flex-direction: column;
+        width: 700px;
+    }
+    .constant-div{
+        height: fit-content !important;
+        width: 100% !important;
+        padding: 40px 0 0 0;
+    }
+    .sliding-div{
+        width: 100%;
+        padding-top: 0px;
+    }
+    .information{
+        width: 100% !important;
+        height: fit-content !important;
+    }
+    .information-info{
+        margin-bottom: 5px;
+    }
+    .navbar{
+        display: flex !important;
+        flex-direction: row !important;
+        height: fit-content !important;
+        border: 1px solid aqua;
+        border-radius: 30px !important;
+        padding: 5px 5px !important;
+        /* position: fixed;
+        left: 350px; */
+    }
+    .navbar li{
+        height: fit-content;
+    }
+    .links{
+        margin-top: 10px;
+        width: fit-content;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        right: 100px;
+    }
+    #resumeButton{
+        margin-top: 10px !important;
+        font-size: 19.2px;
+        position: relative;
+        left: 340px;
+        bottom: 50px;
+    }
+    #let-get-hired{
+        display: none;
+    }
+    .effect{
+        width: 100% !important;
+    }
+}
+
+@media (max-width:430px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+    .constant-div{
+        padding-top: 20px;
+    }
+    .sliding-div{
+        margin-top: 20px;
+    }
+    .constant-div h1{
+        font-size: 2em;
+    }
+    .constant-div h3{
+        font-size: 1em;
+    }
+    .navbar{
+        display: none !important;
+    }
+    #resumeButton{
+        position: relative;
+        left: 0;
+        bottom: 0;
+        font-size: 1em;
+        margin-left: 10px;
+    }
+    .effect{
+        font-size: 1em !important;
+    }
+    .cards-container{
+        padding: 20px 5px;
+        justify-content: space-evenly;
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        top: 130px;
+        right: 50px;
+        width: 100px;
+    }
+}
