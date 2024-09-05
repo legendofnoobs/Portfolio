@@ -7,6 +7,7 @@
     font-family: "inter";
     scroll-behavior: smooth;
     text-decoration: none;
+    color: white;
 }
 
 html{
@@ -143,6 +144,31 @@ img{
     width: fit-content;
 }
 
+.section{
+    margin-bottom: 120px;
+}
+
+.skill-image{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.background-white{
+    background-color: white;
+}
+
+.p5{
+    padding: 5px;
+}
+
+.project-image{
+    margin-bottom: 10px;
+}
+
+.project-info-techs{
+    display: flex; 
+    margin: 10px 0;
+}
 /* ===============test================ */
 
 .effect-card{
@@ -160,6 +186,7 @@ img{
     border: 1px solid aqua;
 }
 
+
 .effect{
     width: 494px;
     color: white;
@@ -170,6 +197,8 @@ img{
     border: 1px solid transparent;
     border-radius: 10px;
     cursor: pointer;
+    margin-bottom: 10px; 
+    font-size: 1.2em;
 }
 
 .effect:hover{
